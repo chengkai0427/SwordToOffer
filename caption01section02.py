@@ -8,4 +8,4 @@ class Binaryadd:#二进制加法，因python的int类不存在溢出，所以拟
     def add(self):
         return bin(int(self.a,2) + int(self.b,2))[2:]
 
-print(Binaryadd(*input("请输入两个二进制数，用空格分隔：").split()).add())
+print(Binaryadd(*input("请输入两个二进制数，不用0b开头，用空格分隔：").split()).add())
